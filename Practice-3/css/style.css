@@ -33,6 +33,7 @@ body{
 .grid-title{
   display: flex;
   align-items: center;
+ 
 }
 .area{
   margin: 0 20px;

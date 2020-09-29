@@ -13,12 +13,6 @@ body{
   width: 30px;
 }
 
-.input-header{
-  width: 90%;
-  text-align: center;
-  margin: 20px 0;
-
-}
 
 .movie-selector {
   display: grid;
