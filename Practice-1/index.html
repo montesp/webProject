@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style/style.css">
   <title>BookStore</title>
   <link rel="icon" type="image/png" href="images/bookstore.jpg" />
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <div class="container">
     <footer class="footer">
       <img src="./images/bookstore.jpg" alt="" class="icon-header">
-      <input type="search" value="" class="input-header">
+      <h2>BookStore</h2>
     </footer>
     <section class="selector" ng-controller="ProductsController as products">
       <div class="movie-selector" ng-repeat="book in products.books">
