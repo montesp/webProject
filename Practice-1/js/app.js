@@ -8,7 +8,7 @@
       "autor": "Orson Scott Card",
       "editorial": "Ediciones B / Zeta",
       "descripcion": "La Tierra está amenazada por una especie extraterrestre de insectos que pretende destruir la humanidad. Para vencerlos se precisa la intervención de un genio militar, por lo cual se permite el nacimiento de Ender tercer hijo de una pareja en un mundo que limita a dos el número de descendientes. Ender se entrenará en una estación espacial, superará a sus rivales y se convertirá en la persona capaz de dirigir las flotas terrestres contra los insectos de otros mundos.",
-      "img": "img/img1.jpg"
+      "img": "images/img1.jpg"
       },
       {
       "id": "2",
@@ -26,7 +26,7 @@
       "traición y la lealtad, la compasión y la sed de venganza, el amor y el poder hacen" + 
       "del juego de tronos una poderosa trampa que atrapará en sus fauces a los" + 
       "personajes... y al lector.",
-      "img": "img/img2.jpg"
+      "img": "images/img2.jpg"
       },
       {
       "id": "3",
@@ -42,8 +42,12 @@
       "paradojas que se plantean en estos relatos futuristas no son sólo ingeniosos" +
       "ejercicios intelectuales sino sobre todo una indagación sobre la situación del" +
       "hombre actual en relación con los avances tecnológicos y con la experiencia del" +
-      "tiempo.",
-      "img": "img/img3.jpg"
+      " tiempo.",
+      "img": "images/img3.jpg"
       }
   ]
+
+  app.controller('ProductsController' , function(){
+    this.books = books 
+  })
 })()

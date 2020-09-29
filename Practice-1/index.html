@@ -1,33 +1,26 @@
 <!DOCTYPE html>
-<html lang="en" ng-app=>
+<html lang="en" ng-app="bookStoreApp">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style/style.css">
   <title>BookStore</title>
+  <link rel="icon" type="image/png" href="images/bookstore.jpg" />
 </head>
 <body>
   <div class="container">
     <footer class="footer">
-      <img src="./img/bookstore.jpg" alt="" class="icon-header">
+      <img src="./images/bookstore.jpg" alt="" class="icon-header">
       <input type="search" value="" class="input-header">
     </footer>
-    <section class="selector">
-      <div class="movie-selector">
-        <img src="./img/img1.jpg" alt="" class="area1">
-        <h1 class="area">titulo mamalon</h1>
+    <section class="selector" ng-controller="ProductsController as products">
+      <div class="movie-selector" ng-repeat="book in products.books">
+        <img ng-src="{{book.img}}" alt="" class="area-img">
+        <h2 class="grid-title area">{{book.titulo}}</h2>
         <div class="area">
-          <h3>ES esto</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate omnis nihil dolorum iure? Veritatis atque eum ut dicta vel quia commodi provident, nemo fugiat! Labore exercitationem explicabo ut mollitia cumque?</p>
+          <h4>{{book.editorial}}</h4>
+          <p>{{book.descripcion}}</p>
         </div>
-      </div>
-    </section>
-    <section class="selector">
-      <div class="movie-selector">
-        <div class="area"></div>
-        <div class="area"></div>
-        <div class="area"></div>
-        <div class="area"></div>
       </div>
     </section>
   </div>

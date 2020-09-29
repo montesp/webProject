@@ -1,9 +1,11 @@
 body{
   margin: 0;
+  background-color: rgba(0,0,0,.1);
 }
 
 .footer{
-  background-color: forestgreen;
+  display: flex;
+  background-color: #00b0ff;
 }
 .icon-header{
   margin: 10px ;
@@ -12,30 +14,43 @@ body{
 }
 
 .input-header{
-  width: 80%;
+  width: 90%;
   text-align: center;
-  margin-bottom: 20px;
+  margin: 20px 0;
+
 }
 
 .movie-selector {
   display: grid;
-  grid-template: 50px 130px / 1fr 5fr;
+  grid-template: 30px 150px / minmax(120px, 1fr) minmax(150px, 5fr);
   grid-template-areas:"imagen  titulo"
                       "imagen descripcion"  ;
   margin: 10px 5px;
+  border: 1px solid rgba(0,0,0,.3) ;
+  border-radius: 5px;
+}
 
+.grid-title{
+  display: flex;
+  align-items: center;
 }
 .area{
   margin: 0 20px;
 }
 
-.area1{
+.area h4{
+  margin: 5px 0;
+}
+
+.area p{
+  margin: 10px 0;
+  font-size: 12px;
+}
+
+.area-img{
   grid-area: imagen;
   height: 100%;
   width: 100%;
   border-radius: 5px;
 }
 
-@media screen and (max-width: 1024px){
-  
-}
