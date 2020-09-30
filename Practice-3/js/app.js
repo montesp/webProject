@@ -1,6 +1,6 @@
 (function(){
 
-  let app = angular.module("bookStoreApp" , [])
+  let app = angular.module("bookStoreApp" , ['ui-router'])
 
   app.controller('ProductsController',['$http' , function($http){
     let products = this
@@ -19,7 +19,10 @@
 
       console.log(response.error)
     
+      
+
     })
   }])
+
 
 })()

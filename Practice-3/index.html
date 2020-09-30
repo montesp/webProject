@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BookStore</title>
+  <script src="//unpkg.com/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
   <link rel="icon" type="image/png" href="images/bookstore.jpg" />
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -17,7 +18,7 @@
     <section class="selector">
       <div class="movie-selector" ng-repeat="book in products.books  | filter:bookSearch">
         <img ng-src="{{book.img}}" alt="" class="area-img">
-        <a href ="" class="grid-title area">{{book.titulo}}</a>
+        <a href="./templates/bookDetail.html" class="grid-title area" >{{book.titulo}}</a>
         <div class="area">
           <h4>{{book.editorial}}</h4>
           <p>{{book.descripcion}}</p>
