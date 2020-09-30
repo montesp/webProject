@@ -8,15 +8,16 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <div class="container">
-    <footer class="footer">
+  <div class="container" ng-controller="ProductsController as products">
+    <header class="header">
       <img src="./images/bookstore.jpg" alt="" class="icon-header">
-      <input type="search" value="" class="input-header">
-    </footer>
-    <section class="selector" ng-controller="ProductsController as products">
-      <div class="movie-selector" ng-repeat="book in products.books">
+      <input ng-model="bookSearch"  type="search" value="" 
+      class="input-header" placeholder="Ingresa tu libro" id="bookSearch">
+    </header>
+    <section class="selector">
+      <div class="movie-selector" ng-repeat="book in products.books  | filter:bookSearch">
         <img ng-src="{{book.img}}" alt="" class="area-img">
-        <h2 class="grid-title area">{{book.titulo}}</h2>
+        <a href ="" class="grid-title area">{{book.titulo}}</a>
         <div class="area">
           <h4>{{book.editorial}}</h4>
           <p>{{book.descripcion}}</p>

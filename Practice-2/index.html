@@ -11,10 +11,11 @@
   <div class="container" ng-controller="ProductsController as products">
     <header class="header">
       <img src="./images/bookstore.jpg" alt="" class="icon-header">
-      <input ng-model="bookSearch"  type="search" value="" class="input-header" placeholder="Ingresa tu libro">
+      <input ng-model="bookSearch"  type="search" value="" 
+      class="input-header" placeholder="Ingresa tu libro" id="bookSearch">
     </header>
     <section class="selector">
-      <div class="movie-selector" ng-repeat="book in products.books  | filter:book>
+      <div class="movie-selector" ng-repeat="book in products.books  | filter:bookSearch">
         <img ng-src="{{book.img}}" alt="" class="area-img">
         <a href ="" class="grid-title area">{{book.titulo}}</a>
         <div class="area">
