@@ -8,15 +8,16 @@
     products.books = [] 
 
     $http({
-      method:'GET',
-      url:'../books.json'
-    }).then(function success(response){
+      method: 'GET',
+			url: './books.json'
+    }).then(function success(response) {
 
-      console.log(response)
-      products.books = response
+      console.log(response.data)
+      products.books = response.data
 
     }, function error(p) {
-      console.log(response)
+
+      console.log(response.error)
     
     })
   }])
