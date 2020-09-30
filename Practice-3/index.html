@@ -18,7 +18,7 @@
     <section class="selector">
       <div class="movie-selector" ng-repeat="book in products.books  | filter:bookSearch">
         <img ng-src="{{book.img}}" alt="" class="area-img">
-        <a href="./templates/bookDetail.html" class="grid-title area" >{{book.titulo}}</a>
+        <a href="./templates/bookDetail.html" class="grid-title area" ui-sref="datos" ui-sref-active="active">{{book.titulo}}</a>
         <div class="area">
           <h4>{{book.editorial}}</h4>
           <p>{{book.descripcion}}</p>
